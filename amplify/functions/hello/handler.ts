@@ -5,6 +5,5 @@ type HandlerType = Schema["sayHello"]["functionHandler"];
 
 export const handler: HandlerType = async (event, context) => {
   const { name } = event.arguments;
-  console.log(process.env);
   return `Hello ${name}`;
 };
